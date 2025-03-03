@@ -1,0 +1,3 @@
+Canvas: Paste Canvas API Key Here (No Quotation Marks!)
+Notion: Paste Notion API Key Here (No Quotation Marks!)
+Database_Id: Paste Notion Database ID Here (No Quotation Marks!)
