@@ -13,8 +13,8 @@ CanvasAPIKey = APIKeyAndDatabaseIDFileDict.get("Canvas").strip()
 DatabaseId = APIKeyAndDatabaseIDFileDict.get("Database_Id").strip()
 
 # Define my Notion and Canvas API Objects
-notion = Notion(NotionAPIKey, "https://api.notion.com/v1")
-canvas = API(CanvasAPIKey, "https://uc.instructure.com/api/v1")
+notion = Notion(str(NotionAPIKey), "https://api.notion.com/v1")
+canvas = API(str(CanvasAPIKey), "https://uc.instructure.com/api/v1")
 
 # Set up the right Notion Headers
 notion.headers.update({"Content-Type": "application/json", "Notion-Version": "2022-06-28",})
