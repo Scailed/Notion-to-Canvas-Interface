@@ -47,25 +47,25 @@ If you aren't familiar with github, this just means that you're downloading a co
 ### Step 2: Setup your API key for Canvas
 In your Canvas dashboard, click on Account > Settings, and scroll down to the bottom of the settings page, you should see something like this, although you may have a different set of integrations. Luckily, the existing integrations don't affect our program at all.
 
-![Canvas API window image](<Canvas API window screenshot.png>)
+![alt text](<Tutorial Images/Canvas API window screenshot.png>)
 
 You'll want to click "New Access Token," this is how we'll allow our script to access our canvas assignment data. When you do, you'll see something like this window.
 
-![alt text](<New Access Token Image.png>)
+![alt text](<Tutorial Images/New Access Token Image.png>)
 
 You don't have to say that the purpose is "Notion to Canvas Integration" for the script to work, so you can name it whatever you want. However, I would recommend naming it something descriptive in case you forget what it's for. I'd also recommend leaving the "Expiration Date" and "Expiration Time" blank so that you don't have to worry about your integration randomly cutting out on you. If you have some reason to set the expiration date and time, it won't affect the functionality of the program. At least until the expiration date passes, after that it won't work at all.
 
 Once you've filled out the "Purpose" field, and either edited the "Expiration Date" and "Expiration Time," or left them blank, click "Generate Token." That'll pull up a window like this one:
 
-![alt text](<Access Token Details.png>)
+![alt text](<Tutorial Images/Access Token Details.png>)
 
 Canvas's advice is sound here, DO NOT close this window until you have the Token saved into a text file. I've actually included a place for you to put it in the repository files anyway, so you don't have to create your own! Open the folder that you cloned the github repository into. (Don't worry, the access token details window won't close unless you click the "X" in the top right, so it's safe to click off of your browser). From there, open the file named "API Keys & Database ID.txt". It'll look like this.
 
-![alt text](<API Key txt file.png>)
+![alt text](<Tutorial Images/API Key txt file.png>)
 
  We're going to copy the API token from Canvas into this file. If you aren't sure what your token is, it's the long string of random characters titled "Token". In this example case, my token is "1109~kTzn8fE3MVX8KcfDHVJUYDcArnGmQRULBJ3YmyX8TcNr3aBftU7rDYK76CZE37LZ". Copy your token to your clipboard (Cmd/Ctrl + C), delete the text after "Canvas:" and paste the token in its place. If you're worried about the amount of space between "Canvas:" and your token, you don't have to worry. The script deletes any spaces before and after the token, so it won't break the program if you add an extra space or delete the existing space. Just make sure the token is on the same line as "Canvas:"
 
- ![alt text](<API Key txt file with Canvas token paste.png>)
+ ![alt text](<Tutorial Images/API Key txt file with Canvas token paste.png>)
 
  Sweet! Save the "API Keys & Database ID.txt" file, and now it's safe to close the "Access Token Details" page in your browser. Phew!
 
@@ -75,11 +75,11 @@ Canvas's advice is sound here, DO NOT close this window until you have the Token
 
  Click on [this link](https://www.notion.so/my-integrations) to go to your Notion "Integrations" page. You may get prompted to sign in if you aren't signed in already. It should look like this
 
- ![alt text](<Notion Integrations Page.png>)
+ ![alt text](<Tutorial Images/Notion Integrations Page.png>)
 
 Click on "New integration," and you'll be brought to the "New integration" page.
 
-![alt text](<New Notion Integration Page.png>)
+![alt text](<Tutorial Images/New Notion Integration Page.png>)
 
 Go ahead and name this integration (I recommend "Canvas Integration," Notion won't let you have the word "notion" in your integration name :/ ), and set "Associated workspace" to the workspace that you'll use to track your Canvas Assignments. We'll be creating a database for the script to import into in a few minutes. Make sure "Type" is set to internal, and then click "Save." You should see a pop-up like this
 
